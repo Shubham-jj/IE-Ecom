@@ -1,0 +1,129 @@
+.header {
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 50px;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  text-decoration: none;
+  font-size: x-large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.header .left {
+  /* border: 2px solid red; */
+  color: whitesmoke;
+}
+
+.header .mid {
+  display: flex;
+}
+#src {
+  width: 200px;
+}
+
+.header .right {
+  /* border: 2px solid red; */
+  display: flex;
+  gap: 30px;
+}
+
+.right a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+/* Middle Section */
+body {
+  font-family: Verdana, sans-serif;
+}
+
+.middle {
+  background-color: rgba(218, 238, 238, 0.927);
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 95%;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.captext {
+  color: #010004;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #010004;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Cards title */
+.title {
+  background-color: bisque;
+  border: 3px solid rgb(229, 148, 148);
+  border-radius: 50px;
+  color: rgb(118, 62, 62);
+  font-size: x-large;
+  font-family: "Courier New", Courier, monospace;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Cards */
+.cards {
+  display: flex;
+  justify-content: space-around;
+}
+
+.cards .crd1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.crd1 a {
+  text-decoration: none;
+  color: rgb(82, 39, 39);
+}

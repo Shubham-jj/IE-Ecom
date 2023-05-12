@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!-- <script src="/Script.js"></script> -->
+ <link rel="stylesheet" href="Style.css">
+ <title>Caffeine Heads Shop</title>
+</head>
+
+<body>
+ <div class="header">
+  <div class="left">
+   Caffeine Shop for Caffeine Heads
+  </div>
+
+  <div class="mid">
+   <input type="search" name="searchBar" id="src" placeholder="Search coffes">
+   <input type="submit" value="Go!">
+  </div>
+  <div class="right">
+   <a href="#">Home</a>
+   <a href="#">Our Products</a>
+   <a href="#">Contact us</a>
+   <a href="#">About Us</a>
+
+  </div>
+ </div>
+
+
+ </div>
+
+ <!-- Middle body  -->
+ <div class="middle">
+  <div class="slideshow-container">
+
+   <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="Coffee mug - 1.jpg" style="width:100%">
+    <div class="captext">Brown Coffee Mug</div>
+   </div>
+
+   <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="Coffee mug - 2.jpg" style="width:100%">
+    <div class="captext">White coffee mug</div>
+   </div>
+
+   <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="Coffee mug - 3.jpg" style="width:100%">
+    <div class="captext">Printed Coffee mug</div>
+   </div>
+
+  </div>
+  <br>
+
+  <div style="text-align:center">
+   <span class="dot"></span>
+   <span class="dot"></span>
+   <span class="dot"></span>
+  </div>
+ </div>
+ <br>
+ <br>
+
+ <div class="title">
+  <h1>Our Top selling Coffee Brands</h1>
+ </div>
+ <br>
+ <br>
+ <div class="cards">
+
+  <div class="crd1">
+   <img src="Card - 1.jpg" alt="Davidoff Collection" width="300px" height="300px">
+   <a href="#">
+    <h2>Davidoff Collection</h2>
+   </a>
+  </div>
+
+  <div class="crd1">
+   <img src="Card - 2.jpg" alt="Nesacfe Gold" width="300px" height="300px">
+   <a href="#">
+    <h2>Nescafe Gold</h2>
+   </a>
+  </div>
+
+  <div class="crd1">
+   <img src="Card - 3.jpg" alt="Nesacfe Dark Roast" width="300px" height="300px">
+   <a href="#">
+    <h2>Nescafe Dark Roast</h2>
+   </a>
+  </div>
+ </div>
+
+
+ <script>
+  let slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+   let i;
+   let slides = document.getElementsByClassName("mySlides");
+   let dots = document.getElementsByClassName("dot");
+   for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+   }
+   slideIndex++;
+   if (slideIndex > slides.length) { slideIndex = 1 }
+   for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+   }
+   slides[slideIndex - 1].style.display = "block";
+   dots[slideIndex - 1].className += " active";
+   setTimeout(showSlides, 2000); // Change image every 2 seconds
+  }
+ </script>
+</body>
+
+</html>
